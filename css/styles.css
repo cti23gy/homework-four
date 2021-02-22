@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Gill;
+  src: url(../fonts/fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: Nova;
+  src: url(../fonts/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+.hero {
+  max-width: 1280px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero .header {
+  font-family: Nova;
+  font-size: 25px;
+  color: #fff;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.promo-tours {
+  max-width: 1280px;
+  min-height: 304px;
+  margin: -50px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.promo-tours .promo {
+  height: 304px;
+  width: 236px;
+  margin-bottom: 30px;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.promo-tours .promo .header {
+  font-family: Nova;
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+.promo-tours .promo .price {
+  font-family: Nova;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.promo-tours .promo .more {
+  font-family: Gill;
+  background-color: #5d9bce;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.promo-tours .israel {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-01.jpg);
+}
+.promo-tours .usa {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-02.jpg);
+}
+.promo-tours .austrailia {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-03.jpg);
+}
+
+@media only screen and (max-width: 1060px) {
+  .promo-tours {
+    width: 236px;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.footer {
+  width: 1280px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #5d9bce;
+}
+.footer .logo {
+  width: 92px;
+  height: 42px;
+  margin: 20px;
+  background-image: url(../images/logo/logo-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.booking-form {
+  font-family: Gill;
+  width: 1280px;
+  height: 890px;
+  padding-left: 200px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+.booking-form .form1 {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  justify-content: left;
+  padding-left: 20px;
+  align-items: center;
+  float: left;
+  margin: 10px 10px 10px 10px;
+  background-color: #fff;
+  border: 1px solid #5d9bce;
+}
+.booking-form .form2 {
+  width: 700px;
+  height: 50px;
+  display: flex;
+  justify-content: left;
+  padding-left: 20px;
+  align-items: center;
+  margin: 10px 10px 10px 130px;
+  background-color: #fff;
+  border: 1px solid #5d9bce;
+}
+.booking-form .form3 {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  float: left;
+  margin: 10px 10px 10px 130px;
+  background-color: #fff;
+  border: 1px solid #5d9bce;
+}
+.booking-form .form4 {
+  width: 820px;
+  height: 200px;
+  display: flex;
+  justify-content: left;
+  padding-left: 20px;
+  padding-top: 20px;
+  float: left;
+  margin: 10px 10px 10px 10px;
+  background-color: #fff;
+  border: 1px solid #5d9bce;
+}
+.booking-form .submit {
+  width: 820px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: center;
+  margin: 10px 10px 10px 10px;
+  color: #fff;
+  background-color: #5d9bce;
+  border-radius: 100px;
+}
+
+nav {
+  width: 980px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo {
+  width: 92px;
+  height: 42px;
+  margin: 20px;
+  background-image: url(../images/logo/logo-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+nav .links {
+  width: 524px;
+  height: 42px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .links div.pipe {
+  height: 60%;
+  width: 2px;
+  background-color: #5d9bce;
+}
+nav .links div a {
+  font-family: Gill;
+  font-size: 15px;
+  margin: auto;
+  text-decoration: none;
+  color: #fff;
+}
